@@ -7,6 +7,14 @@ use CodeIgniter\Session\Handlers\FileHandler;
 
 class App extends BaseConfig
 {
+
+
+    //display errors
+
+    public $displayErrors = true;
+    public $error_reporting = E_ALL;
+
+        
     /**
      * --------------------------------------------------------------------------
      * Base Site URL
@@ -17,7 +25,7 @@ class App extends BaseConfig
      *
      *    http://example.com/
      */
-    public string $baseURL = 'http://localhost:8080/';
+    public string $baseURL = 'https://localhost/RestauranteUniversitario/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
@@ -339,7 +347,8 @@ class App extends BaseConfig
      *         '10.0.1.200'     => 'X-Forwarded-For',
      *         '192.168.5.0/24' => 'X-Real-IP',
      *     ]
-     *
+     *$pass_db = $_ENV('pass_db');
+
      * @var array<string, string>
      */
     public array $proxyIPs = [];
@@ -446,4 +455,8 @@ class App extends BaseConfig
      * @see http://www.w3.org/TR/CSP/
      */
     public bool $CSPEnabled = false;
+
+
+
+
 }
