@@ -1,0 +1,460 @@
+CRITICAL - 2023-08-31 17:43:24 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH/Config/Routes.php on line 30.
+ 1 SYSTEMPATH/Router/RouteCollection.php(267): require()
+ 2 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 17:43:25 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH/Config/Routes.php on line 30.
+ 1 SYSTEMPATH/Router/RouteCollection.php(267): require()
+ 2 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 17:43:35 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH/Config/Routes.php on line 30.
+ 1 SYSTEMPATH/Router/RouteCollection.php(267): require()
+ 2 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 17:45:21 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH/Config/Routes.php on line 30.
+ 1 SYSTEMPATH/Router/RouteCollection.php(267): require()
+ 2 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 17:45:28 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH/Config/Routes.php on line 30.
+ 1 SYSTEMPATH/Router/RouteCollection.php(267): require()
+ 2 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 17:46:25 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH/Config/Routes.php on line 30.
+ 1 SYSTEMPATH/Router/RouteCollection.php(267): require()
+ 2 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 17:46:37 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH/Config/Routes.php on line 30.
+ 1 SYSTEMPATH/Router/RouteCollection.php(267): require()
+ 2 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 17:46:37 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH/Config/Routes.php on line 30.
+ 1 SYSTEMPATH/Router/RouteCollection.php(267): require()
+ 2 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(447): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 17:58:38 --> Undefined property: App\Controllers\Home::$load
+in APPPATH/Controllers/Home.php on line 9.
+ 1 APPPATH/Controllers/Home.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', '/opt/lampp/htdocs/RestauranteUniversitario/app/Controllers/Home.php', 9)
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 18:58:12 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-31 18:58:12 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-31 18:58:17 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-31 18:58:18 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-31 18:59:37 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:00:13 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:08:17 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:10:39 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:10:39 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:13:06 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:13:07 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:13:07 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:13:08 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:13:08 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:13:09 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:13:17 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:13:18 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:13:53 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:14:07 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:14:08 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:14:08 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:14:56 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:14:57 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:18:52 --> Array callback must have exactly two elements
+in APPPATH/Views/index.php on line 5.
+ 1 SYSTEMPATH/View/View.php(224): include()
+ 2 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:19:49 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-31 19:19:50 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-31 19:19:50 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-31 19:19:51 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-31 19:19:51 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-31 19:19:52 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-31 19:19:52 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-31 19:19:55 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-31 19:22:35 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-31 19:23:02 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-31 19:30:51 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-31 19:30:52 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-31 19:30:53 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-31 19:31:10 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-31 19:31:11 --> Constant expression contains invalid operations
+in APPPATH/Config/Database.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-08-31 19:34:36 --> Error connecting to the database: mysqli_sql_exception: Conexão recusada in /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ru', 3306, '', 0)
+#1 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/RestauranteUniversitario/app/Views/index.php(7): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 /opt/lampp/htdocs/RestauranteUniversitario/system/View/View.php(224): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/RestauranteUniversitario/system/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /opt/lampp/htdocs/RestauranteUniversitario/system/Common.php(1176): CodeIgniter\View\View->render('index', Array, true)
+#7 /opt/lampp/htdocs/RestauranteUniversitario/app/Controllers/Home.php(9): view('index')
+#8 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#9 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/RestauranteUniversitario/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Conexão recusada in /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/RestauranteUniversitario/app/Views/index.php(7): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#3 /opt/lampp/htdocs/RestauranteUniversitario/system/View/View.php(224): include('/opt/lampp/htdo...')
+#4 /opt/lampp/htdocs/RestauranteUniversitario/system/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 /opt/lampp/htdocs/RestauranteUniversitario/system/Common.php(1176): CodeIgniter\View\View->render('index', Array, true)
+#6 /opt/lampp/htdocs/RestauranteUniversitario/app/Controllers/Home.php(9): view('index')
+#7 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#8 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/RestauranteUniversitario/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-31 19:34:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Conexão recusada
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Views/index.php(7): CodeIgniter\Database\BaseConnection->query('SELECT * FROM usuario')
+ 3 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/index.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH/Controllers/Home.php(9): view('index')
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-31 19:37:15 --> Error connecting to the database: mysqli_sql_exception: Conexão recusada in /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ru', 3306, '', 0)
+#1 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/RestauranteUniversitario/app/Views/index.php(7): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 /opt/lampp/htdocs/RestauranteUniversitario/system/View/View.php(224): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/RestauranteUniversitario/system/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /opt/lampp/htdocs/RestauranteUniversitario/system/Common.php(1176): CodeIgniter\View\View->render('index', Array, true)
+#7 /opt/lampp/htdocs/RestauranteUniversitario/app/Controllers/Home.php(9): view('index')
+#8 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#9 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/RestauranteUniversitario/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Conexão recusada in /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/RestauranteUniversitario/app/Views/index.php(7): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#3 /opt/lampp/htdocs/RestauranteUniversitario/system/View/View.php(224): include('/opt/lampp/htdo...')
+#4 /opt/lampp/htdocs/RestauranteUniversitario/system/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 /opt/lampp/htdocs/RestauranteUniversitario/system/Common.php(1176): CodeIgniter\View\View->render('index', Array, true)
+#6 /opt/lampp/htdocs/RestauranteUniversitario/app/Controllers/Home.php(9): view('index')
+#7 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#8 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/RestauranteUniversitario/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-31 19:37:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Conexão recusada
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Views/index.php(7): CodeIgniter\Database\BaseConnection->query('SELECT * FROM usuario')
+ 3 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/index.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH/Controllers/Home.php(9): view('index')
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-31 19:49:06 --> Error connecting to the database: mysqli_sql_exception: Conexão recusada in /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ru', 3306, '', 0)
+#1 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/RestauranteUniversitario/app/Views/index.php(7): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 /opt/lampp/htdocs/RestauranteUniversitario/system/View/View.php(224): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/RestauranteUniversitario/system/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /opt/lampp/htdocs/RestauranteUniversitario/system/Common.php(1176): CodeIgniter\View\View->render('index', Array, true)
+#7 /opt/lampp/htdocs/RestauranteUniversitario/app/Controllers/Home.php(9): view('index')
+#8 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#9 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/RestauranteUniversitario/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Conexão recusada in /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/RestauranteUniversitario/app/Views/index.php(7): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#3 /opt/lampp/htdocs/RestauranteUniversitario/system/View/View.php(224): include('/opt/lampp/htdo...')
+#4 /opt/lampp/htdocs/RestauranteUniversitario/system/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 /opt/lampp/htdocs/RestauranteUniversitario/system/Common.php(1176): CodeIgniter\View\View->render('index', Array, true)
+#6 /opt/lampp/htdocs/RestauranteUniversitario/app/Controllers/Home.php(9): view('index')
+#7 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#8 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/RestauranteUniversitario/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-31 19:49:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Conexão recusada
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Views/index.php(7): CodeIgniter\Database\BaseConnection->query('SELECT * FROM usuario')
+ 3 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/index.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH/Controllers/Home.php(9): view('index')
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-31 19:51:39 --> Array to string conversion
+in APPPATH/Views/index.php on line 10.
+ 1 APPPATH/Views/index.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', '/opt/lampp/htdocs/RestauranteUniversitario/app/Views/index.php', 10)
+ 2 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH/Controllers/Home.php(9): view('index')
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
