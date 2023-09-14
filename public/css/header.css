@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.container-header > ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    align-content: center;
+}
+.container-header > ul > li {
+    margin: 0 10px;
+    color: white;
+
+}
+
+
+.container-header > ul > li >a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 5px  ;
+}
+
+.btn-login {
+    display: flex;
+}
+
+.user {
+    display: flex;
+    margin-top: 15px;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.auth {
+    display: flex;
+    flex-direction: column;
+    margin: 150px auto;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+}
+
+.auth > input {
+    
+}
+
+
+
+.logo{
+    margin-left: 30px;
+}
+
+.container-btn {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.buy-tickets {
+    display: flex;
+    width: 1000px;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: 20px auto;
+
+}
+
+.buy-tickets > a {
+    margin: 2px;
+}
+
+
+.buy-tickets > a > button, .buy-tickets > button{
+    width: 150px;
+}
+
+.container-form {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    /* margin: 0 auto; */
+    justify-content: center;
+    flex-direction: column;
+}

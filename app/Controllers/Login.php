@@ -67,6 +67,14 @@ class Login extends BaseController
             return redirect()->to('register');
         } else { 
             $loginModel->insertUser($name, $email, $pass);
+            return redirect()->to('login');
         }
+    }
+
+    public function logout(){
+        $session = session();
+        $session->destroy('user');
+
+        return redirect()->to('/');
     }
 }

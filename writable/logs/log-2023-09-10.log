@@ -1,0 +1,235 @@
+INFO - 2023-09-10 23:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-10 23:17:55 --> Undefined variable $tickets
+in APPPATH/Views/student/student.php on line 3.
+ 1 APPPATH/Views/student/student.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', '/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php', 3)
+ 2 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('student/student', [], true)
+ 5 APPPATH/Controllers/Student.php(13): view('student/student', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Student->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-10 23:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:21:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-10 23:21:15 --> Undefined variable $tickets
+in APPPATH/Views/student/student.php on line 3.
+ 1 APPPATH/Views/student/student.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', '/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php', 3)
+ 2 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('student/student', [], true)
+ 5 APPPATH/Controllers/Student.php(13): view('student/student', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Student->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-10 23:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-10 23:21:16 --> Undefined variable $tickets
+in APPPATH/Views/student/student.php on line 3.
+ 1 APPPATH/Views/student/student.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', '/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php', 3)
+ 2 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('student/student', [], true)
+ 5 APPPATH/Controllers/Student.php(13): view('student/student', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Student->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-10 23:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-10 23:26:11 --> Undefined variable $tickets
+in APPPATH/Views/student/student.php on line 3.
+ 1 APPPATH/Views/student/student.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', '/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php', 3)
+ 2 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('student/student', [], true)
+ 5 APPPATH/Controllers/Student.php(13): view('student/student', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Student->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-10 23:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-10 23:26:11 --> Undefined variable $tickets
+in APPPATH/Views/student/student.php on line 3.
+ 1 APPPATH/Views/student/student.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', '/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php', 3)
+ 2 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('student/student', [], true)
+ 5 APPPATH/Controllers/Student.php(13): view('student/student', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Student->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-10 23:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-10 23:26:28 --> Undefined variable $tickets
+in APPPATH/Views/student/student.php on line 3.
+ 1 APPPATH/Views/student/student.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', '/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php', 3)
+ 2 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('student/student', [], true)
+ 5 APPPATH/Controllers/Student.php(13): view('student/student', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Student->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-10 23:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-10 23:26:29 --> Undefined variable $tickets
+in APPPATH/Views/student/student.php on line 3.
+ 1 APPPATH/Views/student/student.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', '/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php', 3)
+ 2 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('student/student', [], true)
+ 5 APPPATH/Controllers/Student.php(13): view('student/student', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Student->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-10 23:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-10 23:26:51 --> Undefined variable $tickets
+in APPPATH/Views/student/student.php on line 3.
+ 1 APPPATH/Views/student/student.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', '/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php', 3)
+ 2 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('student/student', [], true)
+ 5 APPPATH/Controllers/Student.php(13): view('student/student', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Student->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-10 23:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-10 23:29:19 --> Undefined variable $tickets
+in APPPATH/Views/student/student.php on line 3.
+ 1 APPPATH/Views/student/student.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', '/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php', 3)
+ 2 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('student/student', [], true)
+ 5 APPPATH/Controllers/Student.php(13): view('student/student', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Student->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-10 23:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-10 23:29:55 --> Undefined variable $tickets
+in APPPATH/Views/student/student.php on line 2.
+ 1 APPPATH/Views/student/student.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', '/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php', 2)
+ 2 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('student/student', [], true)
+ 5 APPPATH/Controllers/Student.php(13): view('student/student', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Student->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-10 23:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-10 23:30:01 --> Undefined variable $tickets
+in APPPATH/Views/student/student.php on line 2.
+ 1 APPPATH/Views/student/student.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', '/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php', 2)
+ 2 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('student/student', [], true)
+ 5 APPPATH/Controllers/Student.php(13): view('student/student', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Student->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-10 23:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-10 23:30:01 --> Undefined variable $tickets
+in APPPATH/Views/student/student.php on line 2.
+ 1 APPPATH/Views/student/student.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', '/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php', 2)
+ 2 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('student/student', [], true)
+ 5 APPPATH/Controllers/Student.php(13): view('student/student', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Student->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-10 23:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-10 23:32:28 --> Undefined variable $tickets
+in APPPATH/Views/student/student.php on line 3.
+ 1 APPPATH/Views/student/student.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', '/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php', 3)
+ 2 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('student/student', [], true)
+ 5 APPPATH/Controllers/Student.php(13): view('student/student', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Student->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-10 23:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-10 23:36:15 --> Undefined variable $tickets
+in APPPATH/Views/student/student.php on line 2.
+ 1 APPPATH/Views/student/student.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', '/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php', 2)
+ 2 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('student/student', [], true)
+ 5 APPPATH/Controllers/Student.php(17): view('student/student', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Student->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-10 23:36:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-10 23:36:48 --> Undefined variable $tickets
+in APPPATH/Views/student/student.php on line 2.
+ 1 APPPATH/Views/student/student.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', '/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php', 2)
+ 2 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('student/student', [], true)
+ 5 APPPATH/Controllers/Student.php(17): view('student/student', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Student->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-10 23:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-10 23:36:56 --> Undefined variable $tickets
+in APPPATH/Views/student/student.php on line 2.
+ 1 APPPATH/Views/student/student.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', '/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php', 2)
+ 2 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('student/student', [], true)
+ 5 APPPATH/Controllers/Student.php(17): view('student/student', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Student->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-10 23:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-10 23:37:08 --> Undefined variable $tickets
+in APPPATH/Views/student/student.php on line 2.
+ 1 APPPATH/Views/student/student.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tickets', '/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php', 2)
+ 2 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/student/student.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('student/student', [], true)
+ 5 APPPATH/Controllers/Student.php(17): view('student/student', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Student->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-10 23:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:41:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:42:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-10 23:45:17 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH/Controllers/Student.php on line 22.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdocs/RestauranteUniversitario/app/Controllers/Student.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Student')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Student')
+ 4 SYSTEMPATH/CodeIgniter.php(890): class_exists('\\App\\Controllers\\Student', true)
+ 5 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-10 23:45:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-10 23:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -33,10 +33,27 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('login', 'Login::index');
-$routes->post('auth', 'Login::auth');
-$routes->get('prad', 'Prad::index');
+$routes->post('authentication', 'Login::auth');
 $routes->get('register', 'Login::register');
 $routes->post('signup', 'Login::signup');
+$routes->get('logout', 'Login::logout');
+
+$routes->get('prad', 'Prad::index');
+
+$routes->get('tickets', 'Tickets::index');
+$routes->post('defineQuantities', 'Tickets::defineQuantities' );
+$routes->get('createTickets', 'Tickets::index');
+$routes->post('createSale', 'Tickets::createSale');
+$routes->post('insertTickets', 'Tickets::insertTickets');
+$routes->get('sale', 'Tickets::sale');
+$routes->get('validateTicket', 'Tickets::validateTicketsView');
+$routes->post('validate', 'Tickets::validateTicket');
+
+$routes->get('student', 'Student::index');
+$routes->get('buytickets', 'Student::buytickets');
+$routes->get('buy/(:num)', 'Student::buy/$1');
+$routes->get('extract', 'Student::extract');
+
 
 /*
  * --------------------------------------------------------------------

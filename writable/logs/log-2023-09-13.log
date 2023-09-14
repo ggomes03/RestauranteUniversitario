@@ -1,0 +1,212 @@
+INFO - 2023-09-13 21:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:01:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:18:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-13 21:18:50 --> syntax error, unexpected single-quoted string "situacaoTicket", expecting "]"
+in APPPATH/Models/TicketsModel.php on line 39.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdocs/RestauranteUniversitario/app/Models/TicketsModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TicketsModel')
+ 3 APPPATH/Views/tickets/tickets.php(8): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TicketsModel')
+ 4 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/tickets/tickets.php')
+ 5 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('tickets/tickets', [], true)
+ 7 APPPATH/Controllers/Tickets.php(9): view('tickets/tickets')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Tickets->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tickets))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-13 21:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-13 21:18:59 --> syntax error, unexpected token "=>", expecting "]"
+in APPPATH/Models/TicketsModel.php on line 42.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdocs/RestauranteUniversitario/app/Models/TicketsModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\TicketsModel')
+ 3 APPPATH/Views/tickets/tickets.php(8): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\TicketsModel')
+ 4 SYSTEMPATH/View/View.php(224): include('/opt/lampp/htdocs/RestauranteUniversitario/app/Views/tickets/tickets.php')
+ 5 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('tickets/tickets', [], true)
+ 7 APPPATH/Controllers/Tickets.php(9): view('tickets/tickets')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Tickets->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tickets))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-13 21:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-13 21:23:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ru`.`ticket`, CONSTRAINT `fk_ticket_promocoes1` FOREIGN KEY (`idpromocao`) REFERENCES `promocoes` (`idpromocoes`)) in /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ti...', 0)
+#1 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 /opt/lampp/htdocs/RestauranteUniversitario/app/Models/TicketsModel.php(46): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/RestauranteUniversitario/app/Controllers/Tickets.php(38): App\Models\TicketsModel->insertTickets('5', '2023-09-14', '5', '0')
+#6 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(932): App\Controllers\Tickets->insertTickets()
+#7 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tickets))
+#8 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/RestauranteUniversitario/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-13 21:23:06 --> Cannot add or update a child row: a foreign key constraint fails (`ru`.`ticket`, CONSTRAINT `fk_ticket_promocoes1` FOREIGN KEY (`idpromocao`) REFERENCES `promocoes` (`idpromocoes`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ticket` (`idTicket`, `situacaoTicket`, `valor`, `cod`, `vencimento`, `idpromocao`) VALUES (1, 3, \'5\', \'1130923\', \'2023-09-14\', \'0\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ticket` (`idTicket`, `situacaoTicket`, `valor`, `cod`, `vencimento`, `idpromocao`) VALUES (1, 3, \'5\', \'1130923\', \'2023-09-14\', \'0\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ticket` (`idTicket`, `situacaoTicket`, `valor`, `cod`, `vencimento`, `idpromocao`) VALUES (1, 3, \'5\', \'1130923\', \'2023-09-14\', \'0\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ticket` (`idTicket`, `situacaoTicket`, `valor`, `cod`, `vencimento`, `idpromocao`) VALUES (:idTicket:, :situacaoTicket:, :valor:, :cod:, :vencimento:, :idpromocao:)', [...], false)
+ 5 APPPATH/Models/TicketsModel.php(46): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Tickets.php(38): App\Models\TicketsModel->insertTickets('5', '2023-09-14', '5', '0')
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Tickets->insertTickets()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tickets))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-13 21:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-13 21:25:39 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ru`.`ticket`, CONSTRAINT `fk_ticket_promocoes1` FOREIGN KEY (`idpromocao`) REFERENCES `promocoes` (`idpromocoes`)) in /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ti...', 0)
+#1 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 /opt/lampp/htdocs/RestauranteUniversitario/app/Models/TicketsModel.php(46): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/RestauranteUniversitario/app/Controllers/Tickets.php(38): App\Models\TicketsModel->insertTickets('5', '2023-09-14', '5', '0')
+#6 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(932): App\Controllers\Tickets->insertTickets()
+#7 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tickets))
+#8 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/RestauranteUniversitario/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-13 21:25:39 --> Cannot add or update a child row: a foreign key constraint fails (`ru`.`ticket`, CONSTRAINT `fk_ticket_promocoes1` FOREIGN KEY (`idpromocao`) REFERENCES `promocoes` (`idpromocoes`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ticket` (`idTicket`, `situacaoTicket`, `valor`, `cod`, `vencimento`, `idpromocao`) VALUES (1, 3, \'5\', \'1130923\', \'2023-09-14\', \'0\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ticket` (`idTicket`, `situacaoTicket`, `valor`, `cod`, `vencimento`, `idpromocao`) VALUES (1, 3, \'5\', \'1130923\', \'2023-09-14\', \'0\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ticket` (`idTicket`, `situacaoTicket`, `valor`, `cod`, `vencimento`, `idpromocao`) VALUES (1, 3, \'5\', \'1130923\', \'2023-09-14\', \'0\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ticket` (`idTicket`, `situacaoTicket`, `valor`, `cod`, `vencimento`, `idpromocao`) VALUES (:idTicket:, :situacaoTicket:, :valor:, :cod:, :vencimento:, :idpromocao:)', [...], false)
+ 5 APPPATH/Models/TicketsModel.php(46): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Tickets.php(38): App\Models\TicketsModel->insertTickets('5', '2023-09-14', '5', '0')
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Tickets->insertTickets()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tickets))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-13 21:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-13 21:25:50 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ru`.`ticket`, CONSTRAINT `fk_ticket_promocoes1` FOREIGN KEY (`idpromocao`) REFERENCES `promocoes` (`idpromocoes`)) in /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ti...', 0)
+#1 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ti...')
+#2 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ti...')
+#3 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ti...', Array, false)
+#4 /opt/lampp/htdocs/RestauranteUniversitario/app/Models/TicketsModel.php(46): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/RestauranteUniversitario/app/Controllers/Tickets.php(38): App\Models\TicketsModel->insertTickets('5', '2023-09-14', '5', '0')
+#6 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(932): App\Controllers\Tickets->insertTickets()
+#7 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tickets))
+#8 /opt/lampp/htdocs/RestauranteUniversitario/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /opt/lampp/htdocs/RestauranteUniversitario/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-13 21:25:50 --> Cannot add or update a child row: a foreign key constraint fails (`ru`.`ticket`, CONSTRAINT `fk_ticket_promocoes1` FOREIGN KEY (`idpromocao`) REFERENCES `promocoes` (`idpromocoes`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `ticket` (`idTicket`, `situacaoTicket`, `valor`, `cod`, `vencimento`, `idpromocao`) VALUES (1, 3, \'5\', \'1130923\', \'2023-09-14\', \'0\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ticket` (`idTicket`, `situacaoTicket`, `valor`, `cod`, `vencimento`, `idpromocao`) VALUES (1, 3, \'5\', \'1130923\', \'2023-09-14\', \'0\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ticket` (`idTicket`, `situacaoTicket`, `valor`, `cod`, `vencimento`, `idpromocao`) VALUES (1, 3, \'5\', \'1130923\', \'2023-09-14\', \'0\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ticket` (`idTicket`, `situacaoTicket`, `valor`, `cod`, `vencimento`, `idpromocao`) VALUES (:idTicket:, :situacaoTicket:, :valor:, :cod:, :vencimento:, :idpromocao:)', [...], false)
+ 5 APPPATH/Models/TicketsModel.php(46): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH/Controllers/Tickets.php(38): App\Models\TicketsModel->insertTickets('5', '2023-09-14', '5', '0')
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Tickets->insertTickets()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tickets))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-13 21:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:34:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 21:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 22:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 22:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 22:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 22:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 22:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 22:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 22:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 22:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:15:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:57:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 23:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-13 23:57:28 --> Invalid file: "extract.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('extract.php')
+ 2 SYSTEMPATH/Common.php(1176): CodeIgniter\View\View->render('extract', [], true)
+ 3 APPPATH/Controllers/Student.php(40): view('extract')
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Student->extract()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-13 23:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
