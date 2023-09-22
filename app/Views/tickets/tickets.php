@@ -1,67 +1,56 @@
 <?php 
 
-$tickets = 'https://localhost/RestauranteUniversitario/public/index.php/tickets';
-$createTickets = 'https://localhost/RestauranteUniversitario/public/index.php/createTickets';
-
 use \App\Models\TicketsModel;
 
 $TicketsModel = new TicketsModel;
+
 ?> 
 <div class="container-form">
-
-<?php
-if(current_url() == $tickets) {?>
-<?= form_open('defineQuantities'); ?>
-    <div>
-        <label for="">Quantidade permitida de tickets que cada usuário pode comprar:</label>
-        <input required type="text" name="allowedAmountSale" id="allowedAmountSale">
-    </div>
-
-    <div>
-        <label for="">Quantidade permitida de tickets que cada usuário pode validar por dia:</label>
-        <input required type="text" name="allowedAmountValidate" id="allowedAmountValidate">
-    </div>
-
-    <button type="submit">Definir Regra</button>
-
-
-<?= form_close(); ?> 
-
-<?php } else if (current_url() == $createTickets){?>
 
     <?php if (session()->has('success')): ?>
         <div class="alert alert-success"><?= session('success') ?></div>
     <?php endif; ?>
 
     <?= form_open('insertTickets'); ?>
-    <div>
+    <div class="container">
         <label for="number">Valor</label>
-        <input type="number" name="valueTicket" id="valueTicket">
+        <input required class="form-control" min="0" type="number" name="valueTicket" id="valueTicket" step="0.01">
     </div>
 
-    <div>
+
+    <div class="container">
         <label for="validity">Validade</label>
-        <input type="date" name="validity" id="validity">
+        <input required class="form-control" type="date" name="validity" id="validity">
         
     </div>
 
-    <div>
+    <div  class="container">
         <label for="quantity">Quantidade</label>
-        <input type="number" name="quantity" id="quantity">        
+        <input required class="form-control" min="0" type="number" name="quantity" id="quantity">        
     </div>
 
-    <div>
+    <div class="container-promo">
         <label for="">Promoção:</label>
-        <input value="1" type="radio" name="sale" id="yes" class="sale">
-        <label for="yes">Sim</label>
-        <input checked value="0" type="radio" name="sale" id="no" class="sale">
-        <label for="no">Não</label>
-    </div>
 
+        <div class="form-check">
+            <input class="form-check-input sale" value="1" type="radio" name="sale" id="yes">
+            <label class="form-check-label" for="yes">
+                Sim
+            </label>
+        </div>
+ 
+        <div class="form-check">
+            <input class="form-check-input sale" value="0" type="radio" name="sale" id="no" checked>
+            <label class="form-check-label" for="no">
+                Não
+            </label>
+        </div>
+
+    </div>
 
     <div class="sale-container" style="display: none;">
         <label for="idSale">Promoção:</label>
-        <select name="idSale" id="idSale">
+        <select required class="form-select" name="idSale" id="idSale">
             <option value="0">selecione uma promoção</option>
             <?php
             $sales = $TicketsModel->getSales();
@@ -74,7 +63,7 @@ if(current_url() == $tickets) {?>
 
     </div>
 
-    <button type="submit">Gerar Tickets</button>
+    <button class="btn btn-primary" type="submit">Gerar Tickets</button>
 
     <script>
         var inputRadio = document.querySelectorAll('.sale');
@@ -94,4 +83,3 @@ if(current_url() == $tickets) {?>
     <?= form_close(); ?>
 
     </div>
-<?php } ?>

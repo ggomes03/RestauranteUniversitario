@@ -9,6 +9,10 @@ class Tickets extends BaseController
         return view('application/header').view('tickets/tickets').view('application/footer');
     }
 
+    public function defineQuantitiesView(){
+        return view('application/header').view('tickets/definequantities').view('application/footer');
+    }
+
     public function defineQuantities(){
         
         $ticketsModel = new TicketsModel();
@@ -21,9 +25,15 @@ class Tickets extends BaseController
         $allowedAmountValidate  = intval($this->request->getPost('allowedAmountValidate'));
 
 
-        $ticketsModel->postAllowedAmount($idUser, $allowedAmountSale, $allowedAmountValidate);
+        if($allowedAmountSale <= 0 ){
+            $session->setFlashdata('error', 'O campo de compra não pode ser zero ou negativo!');
+        } else if($allowedAmountValidate <= 0) {
+            $session->setFlashdata('error', 'O campo de validação não pode ser zero ou negativo!');
+        } else {
+            $ticketsModel->postAllowedAmount($idUser, $allowedAmountSale, $allowedAmountValidate);
+        }
 
-        return redirect()->to('/');
+        return redirect()->to('defineQuantities');
         
     }
 
@@ -77,23 +87,34 @@ class Tickets extends BaseController
         $idTicket           = $this->request->getPost('codTicket');
 
         $ticket             = $ticketsModel->getTicket($idTicket)[0];
+        // $ruleValidate       = $ticketsModel->getQuantities()[0];
+
+        
+        // $user = session()->get('user');
+
+        // $ticketsValidatedToday = $ticketsModel->getTicketsValidatedToday($user);
 
         $situacaoTicket     = $ticket->situacaoTicket;
         $codTicket          = $ticket->cod;
 
+
         switch ($situacaoTicket){
             case 1:
-                $ticketsModel->validateTicket($codTicket);
-                session()->setFlashdata('success', 'Ticket Validado');
+                // if($ruleValidate->quantidadePermitidaValidacao >= count($ticketsValidatedToday)) {
+                    $ticketsModel->validateTicket($codTicket);
+                    session()->setFlashdata('success', 'Ticket Validado');
+                // } else {
+                    // session()->setFlashdata('error', 'Quantidade máxima de validação atingida!');
+                // }
                 break;
             case 2:
-                session()->setFlashdata('error', 'ticket já vencido');
+                session()->setFlashdata('error', 'Ticket já vencido');
                 break;
             case 3:
                 session()->setFlashdata('error', 'Ticket ainda não foi vendido');
                 break;
             case 4:
-                session()->setFlashdata('error', 'ticket já validado');
+                session()->setFlashdata('error', 'Ticket já validado');
                 break;
         }
 

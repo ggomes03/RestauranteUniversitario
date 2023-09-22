@@ -5,6 +5,9 @@
 <?= form_open('signup'); ?>
 
     <div class="auth">
+
+        <h1>Cadastre-se</h1>
+
         <div class="form-floating mb-3">
             <input required type="text" class="form-control" id="name" name="name" placeholder="name@example.com">
             <label for="name">Nome</label>

@@ -47,7 +47,7 @@ class Student extends BaseController
             'tickets'   => $tickets
         ];
 
-        return view('application/header').view('student/extract', $data).view('application/footer');
+        return view('application/header').view('student/extract', $data);
     }
 }
 

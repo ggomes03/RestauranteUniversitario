@@ -10,13 +10,13 @@
 
 <?= form_open('validate'); ?>
 
-    <div>
+    <div class="container">
         <label for="codTicket">Código:</label>
-        <input required type="text" name="codTicket" id="codTicket">
+        <input required class="form-control" type="text" name="codTicket" id="codTicket">
     </div>
-    <div>
-    <button type="submit">Validar Ticket</button>
-    </div>
+    
+    <button class="btn btn-primary" type="submit">Validar Ticket</button>
+    
 <?= form_close();?>
 
 </div>

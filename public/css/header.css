@@ -3,10 +3,12 @@
     padding: 0;
 }
 
+section {
+    min-height: 500px;
+}
+
 .navbar {
-    display: flex;
-    align-items: center;
-    align-content: center;
+
 }
 
 .container-header > ul{
@@ -15,23 +17,23 @@
     align-items: center;
     align-content: center;
 }
+
 .container-header > ul > li {
     margin: 0 10px;
     color: white;
-
 }
 
 
 .container-header > ul > li >a{
     text-decoration: none;
     color: white;
-    border: 1px solid white;
-    padding: 10px 20px;
     border-radius: 5px  ;
 }
 
 .btn-login {
     display: flex;
+    align-items: center;
+    align-content: center;
 }
 
 .user {
@@ -50,13 +52,12 @@
     align-items: center;
     align-content: center;
     border-radius: 10px;
+    width: 1000px;
 }
 
-.auth > input {
-    
+.form-floating {
+    width: 650px;
 }
-
-
 
 .logo{
     margin-left: 30px;
@@ -92,11 +93,53 @@
     width: 150px;
 }
 
+
 .container-form {
+    margin-top: 40px;
+}
+
+.container-form > form{
     display: flex;
     align-items: center;
     align-content: center;
-    /* margin: 0 auto; */
     justify-content: center;
     flex-direction: column;
+    border-top: 100px;
+}
+
+.container-form > form > .container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    width: 400px;
+    
+}
+
+.container-form > form > .container-promo {
+    display: flex;
+    align-items: center;
+    align-content: start;
+    margin: 10px 0;
+}
+
+.svg {
+    fill: white;
+}
+
+.nav-prad {
+    border-bottom: 1px solid gray;
+} 
+
+.nav-item-prad{
+    padding: 20px 0;
+    
+}   
+
+.nav-item-prad:hover{
+    background-color: rgb(213, 213, 218);
+}
+
+.nav-item-prad:hover a {
+    color: black;
+
 }

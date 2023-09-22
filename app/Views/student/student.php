@@ -1,19 +1,18 @@
 <?php 
 ?>
 
+<ul class="nav justify-content-center nav-prad">
 
-<div class="container-btn">  
-
-
-    <a href="<?= base_url('buytickets') ?>">
-        <button type="button" class="btn btn-primary">
-            Comprar Tickets
-        </button>
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="<?= base_url('buytickets') ?>" aria-current="page">
+        Comprar Tickets
     </a>
+  </li>
 
-    <a href="<?= base_url('extract') ?>">
-        <button type="button" class="btn btn-primary">
-            Extrato
-        </button>
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="<?= base_url('extract') ?>" aria-current="page">
+        Extrato
     </a>
-</div>
+  </li>
+  
+</ul>

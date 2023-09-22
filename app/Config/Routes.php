@@ -40,7 +40,8 @@ $routes->get('logout', 'Login::logout');
 
 $routes->get('prad', 'Prad::index');
 
-$routes->get('tickets', 'Tickets::index');
+$routes->get('createTickets', 'Tickets::index');
+$routes->get('defineQuantitiesView', 'Tickets::defineQuantitiesView');
 $routes->post('defineQuantities', 'Tickets::defineQuantities' );
 $routes->get('createTickets', 'Tickets::index');
 $routes->post('createSale', 'Tickets::createSale');

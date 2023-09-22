@@ -42,8 +42,6 @@ class TicketsModel extends Model
             $data['idpromocao'] = $idSale;
         }
 
-
-
         for($count = 1; $count <= $quantity; $count++){
             
             $data['cod'] = $count . $date;
@@ -190,6 +188,25 @@ class TicketsModel extends Model
         $builder->set($data)->update();
         
     }
+
+
+    //essa funcao retorna os tickets que o usuário validou naquele dia
+    // public function getTicketsValidatedToday($idUser){
+    //     $db = \Config\Database::connect();
+
+
+    //     $query = $db->table('compraVenda')
+    //                 ->join('tickets', 'tickets.idTicket = compraVenda.idTicket')
+    //                 ->where('compraVenda.idUsuario', $idUser)
+    //                 ->where('tickets.dataValidacao', 'CURDATE()')
+    //                 ->get();
+
+    //     $results = $query->getResult();
+    //     var_dump($results);
+    //     die();
+        
+    //     return $results;
+    // }
 
 
 }

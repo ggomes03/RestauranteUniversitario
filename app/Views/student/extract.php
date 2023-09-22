@@ -24,7 +24,7 @@
 
                 </td>
                 <td>
-                    <?= $ticket->vencimento ?> 
+                    <?= date('d/m/Y',strtotime($ticket->vencimento)) ?> 
 
                 </td>
                 <td>    

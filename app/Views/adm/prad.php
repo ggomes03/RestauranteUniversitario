@@ -1,21 +1,19 @@
-<div class="container-btn">        
-    <a href="<?= base_url('tickets')?>">
-        <button type="button" class="btn btn-primary">Definir Quantidades</button>
-    </a>
+<ul class="nav justify-content-center nav-prad">
 
-    <a href="<?= base_url('createTickets')?>">
-        <button type="button" class="btn btn-primary">Criar Tickets</button>
-    </a>
-
-    <a href="<?= base_url('validateTicket')?>">
-        <button type="button" class="btn btn-primary">Validar Tickets</button>
-    </a>
-
-    <a href="<?= base_url('sale')?>">
-        <button type="button" class="btn btn-primary">Criar Promoção</button>
-    </a>
-
-    <a href="<?= base_url('student')?>">
-        <button type="button" class="btn btn-primary">Painel do Estudante</button>
-    </a>
-</div>
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="<?= base_url('defineQuantitiesView')?>" aria-current="page">Definir Quantidades</a>
+  </li>
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="<?= base_url('createTickets')?>" aria-current="page">Criar Tickets</a>
+  </li>
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="<?= base_url('validateTicket')?>" aria-current="page">Validar Tickets</a>
+  </li>
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="<?= base_url('sale')?>" aria-current="page">Criar Promoção</a>
+  </li>
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="<?= base_url('student')?>" aria-current="page">Painel do Estudante</a>
+  </li>
+  
+</ul>

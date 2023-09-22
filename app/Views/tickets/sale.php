@@ -6,26 +6,26 @@
 
 <?= form_open('createSale');?>
 
-    <div>
+    <div class="container">
         <label for="valueSale">Valor Promoção:</label>
-        <input required type="number" name="valueSale" id="valueSale">
+        <input required class="form-control" type="number" name="valueSale" id="valueSale" min="0" step="0.01">
 
     </div>
 
-    <div>
+    <div class="container">
         <label for="dateStart">Data Início:</label>
-        <input required type="date" name="dateStart" id="dateStart">
+        <input class="form-control" required type="date" name="dateStart" id="dateStart">
     </div>
 
-    <div>
+    <div class="container">
         <label for="dateEnd">Data Fim:</label>
-        <input required type="date" name="dateEnd" id="dateEnd">
+        <input class="form-control" required type="date" name="dateEnd" id="dateEnd">
 
     </div>
 
     
     
-    <button type="submit">Criar Promoção</button>
+    <button class="btn btn-primary" type="submit">Criar Promoção</button>
 
 <?= form_close('');?>
 

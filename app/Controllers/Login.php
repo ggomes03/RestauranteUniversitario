@@ -9,11 +9,11 @@ class Login extends BaseController
 {
     public function index(): string
     {   
-        return view('application/header').view('login/login').view('application/footer');
+        return view('application/header').view('login/login');
     }
 
     public function register(){
-        return view('application/header').view('login/signup').view('application/footer');
+        return view('application/header').view('login/signup');
     }
 
     public function auth(){
