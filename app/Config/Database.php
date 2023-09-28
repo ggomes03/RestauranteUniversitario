@@ -29,7 +29,7 @@ class Database extends Config
         'DSN'      => '',
         'hostname' => '127.0.0.1',
         'username' => 'root',
-        'password' => '01a02b03c',
+        'password' => '',
         'database' => 'ru',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
