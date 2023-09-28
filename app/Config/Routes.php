@@ -42,7 +42,7 @@ $routes->get('prad', 'Prad::index');
 
 $routes->get('createTickets', 'Tickets::index');
 $routes->get('defineQuantitiesView', 'Tickets::defineQuantitiesView');
-$routes->post('defineQuantities', 'Tickets::defineQuantities' );
+$routes->post('defineQuantities', 'Tickets::defineQuantities');
 $routes->get('createTickets', 'Tickets::index');
 $routes->post('createSale', 'Tickets::createSale');
 $routes->post('insertTickets', 'Tickets::insertTickets');
@@ -55,6 +55,9 @@ $routes->get('buytickets', 'Student::buytickets');
 $routes->get('buy/(:num)', 'Student::buy/$1');
 $routes->get('extract', 'Student::extract');
 
+// Rota para o menu
+$routes->get('menu', 'ProcessarMenu::index');
+$routes->post('processaMenu', 'ProcessarMenu::processaMenu');
 
 /*
  * --------------------------------------------------------------------

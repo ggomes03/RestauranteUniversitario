@@ -1,0 +1,60 @@
+INFO - 2023-09-28 20:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-28 20:30:51 --> mysqli_sql_exception: Unknown column 'NomePrato' in 'field list' in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Ca...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ca...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ca...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ca...', Array, false)
+#4 C:\xampp\htdocs\RestauranteUniversitario\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\RestauranteUniversitario\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\RestauranteUniversitario\app\Models\CardapioMenuModel.php(23): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\ProcessarMenu.php(27): App\Models\CardapioMenuModel->inserirPrato('2023-09-29', 'Fil\xC3\xA9 a Parmegi...', 'Sexta-Feira')
+#9 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\ProcessarMenu->processaMenu()
+#10 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessarMenu))
+#11 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-28 20:30:51 --> Unknown column 'NomePrato' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Cardapios` (`Data`, `NomePrato`, `DiaSemana`) VALUES (\'2023-09-29\', \'Filé a Parmegiana\', \'Sexta-Feira\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Cardapios` (`Data`, `NomePrato`, `DiaSemana`) VALUES (\'2023-09-29\', \'Filé a Parmegiana\', \'Sexta-Feira\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Cardapios` (`Data`, `NomePrato`, `DiaSemana`) VALUES (\'2023-09-29\', \'Filé a Parmegiana\', \'Sexta-Feira\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Cardapios` (`Data`, `NomePrato`, `DiaSemana`) VALUES (:Data:, :NomePrato:, :DiaSemana:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\CardapioMenuModel.php(23): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\ProcessarMenu.php(27): App\Models\CardapioMenuModel->inserirPrato('2023-09-29', 'Filé a Parmegiana', 'Sexta-Feira')
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\ProcessarMenu->processaMenu()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessarMenu))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-28 20:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-28 20:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
