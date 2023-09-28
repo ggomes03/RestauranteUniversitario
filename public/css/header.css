@@ -7,9 +7,6 @@ section {
     min-height: 500px;
 }
 
-.navbar {
-
-}
 
 .container-header > ul{
     display: flex;
@@ -142,4 +139,37 @@ section {
 .nav-item-prad:hover a {
     color: black;
 
+}
+
+.buy-tickets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.tickets-quantities {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.tickets-quantities > button {
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 100px; 
+    margin: 0 10px;
+    font-size: 24px;
+
+}
+
+.valor {
+    display: flex;
+}
+
+.valor .preco {
+    margin-left: 10px;
 }

@@ -1,0 +1,14 @@
+ERROR - 2023-09-28 01:07:57 --> mysqli_sql_exception: Referencing column 'tipoUsuario' and referenced column 'idTipoUsuario' in foreign key constraint 'usuario_tipoUsuario_foreign' are incompatible. in /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MySQLi/Connection.php(295): mysqli->query('CREATE TABLE `u...', 0)
+#1 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 /opt/lampp/htdocs/RestauranteUniversitario/app/Database/Migrations/2023-09-27-012628_Usuario.php(39): CodeIgniter\Database\Forge->createTable('usuario')
+#5 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MigrationRunner.php(877): App\Database\Migrations\CreateUsuarioTable->up()
+#6 /opt/lampp/htdocs/RestauranteUniversitario/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 /opt/lampp/htdocs/RestauranteUniversitario/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /opt/lampp/htdocs/RestauranteUniversitario/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /opt/lampp/htdocs/RestauranteUniversitario/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /opt/lampp/htdocs/RestauranteUniversitario/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}

@@ -180,7 +180,8 @@ class TicketsModel extends Model
         $db = \Config\Database::connect();
 
         $data = [
-            'situacaoTicket' => 4
+            'situacaoTicket' => 4,
+            'dataValidacao'  => date('Y-m-d')
         ];
 
         $builder = $db->table('ticket');
@@ -191,22 +192,22 @@ class TicketsModel extends Model
 
 
     //essa funcao retorna os tickets que o usuário validou naquele dia
-    // public function getTicketsValidatedToday($idUser){
-    //     $db = \Config\Database::connect();
+    public function getTicketsValidatedToday($idUser){
+        $db = \Config\Database::connect();
 
-
-    //     $query = $db->table('compraVenda')
-    //                 ->join('tickets', 'tickets.idTicket = compraVenda.idTicket')
-    //                 ->where('compraVenda.idUsuario', $idUser)
-    //                 ->where('tickets.dataValidacao', 'CURDATE()')
-    //                 ->get();
-
-    //     $results = $query->getResult();
-    //     var_dump($results);
-    //     die();
+        $date = date('Y-m-d');
         
-    //     return $results;
-    // }
+
+        $query = $db->table('compraVenda')
+                    ->join('ticket', 'ticket.idTicket = compraVenda.idTicket')
+                    ->where('compraVenda.idUsuario', $idUser)
+                    ->where('ticket.dataValidacao', $date)
+                    ->get();
+
+        $results = $query->getResult();
+        
+        return $results;
+    }
 
 
 }

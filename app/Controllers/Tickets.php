@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\TicketsModel;
+use PhpParser\Node\Stmt\Echo_;
 
 class Tickets extends BaseController
 {
@@ -81,42 +82,45 @@ class Tickets extends BaseController
     }
 
     public function validateTicket(){
-        // echo 'rota encontrada';
+        
         $ticketsModel       = new TicketsModel();
 
         $idTicket           = $this->request->getPost('codTicket');
 
-        $ticket             = $ticketsModel->getTicket($idTicket)[0];
-        // $ruleValidate       = $ticketsModel->getQuantities()[0];
+        $ticket             = $ticketsModel->getTicket($idTicket);
 
+        if($ticket != NULL) {
+            $situacaoTicket     = $ticket[0]->situacaoTicket;
+            $codTicket          = $ticket[0]->cod;
+
+            $user = session()->get('user');
+
+            $ruleValidate       = $ticketsModel->getQuantities()[0]->quantidadePermitidaValidacao;
+            $ticketsValidatedToday = $ticketsModel->getTicketsValidatedToday($user->idUsuario);
         
-        // $user = session()->get('user');
-
-        // $ticketsValidatedToday = $ticketsModel->getTicketsValidatedToday($user);
-
-        $situacaoTicket     = $ticket->situacaoTicket;
-        $codTicket          = $ticket->cod;
-
-
-        switch ($situacaoTicket){
-            case 1:
-                // if($ruleValidate->quantidadePermitidaValidacao >= count($ticketsValidatedToday)) {
-                    $ticketsModel->validateTicket($codTicket);
-                    session()->setFlashdata('success', 'Ticket Validado');
-                // } else {
-                    // session()->setFlashdata('error', 'Quantidade máxima de validação atingida!');
-                // }
-                break;
-            case 2:
-                session()->setFlashdata('error', 'Ticket já vencido');
-                break;
-            case 3:
-                session()->setFlashdata('error', 'Ticket ainda não foi vendido');
-                break;
-            case 4:
-                session()->setFlashdata('error', 'Ticket já validado');
-                break;
+            switch ($situacaoTicket){
+                case 1:
+                    if($ruleValidate > count($ticketsValidatedToday)) {
+                        $ticketsModel->validateTicket($codTicket);
+                        session()->setFlashdata('success', 'Ticket Validado');
+                    } else {
+                        session()->setFlashdata('error', 'Quantidade máxima de validação diária atingida!');
+                    }
+                    break;
+                case 2:
+                    session()->setFlashdata('error', 'Ticket já vencido');
+                    break;
+                case 3:
+                    session()->setFlashdata('error', 'Ticket ainda não foi vendido');
+                    break;
+                case 4:
+                    session()->setFlashdata('error', 'Ticket já validado');
+                    break;
+            }
+        } else {
+            session()->setFlashdata('error', 'Este ticket não existe.');
         }
+        
 
         return redirect()->to('validateTicket');
     }

@@ -3,30 +3,39 @@
 <?php endif; ?>
 
 
-
-<h1>Comprar Tickets</h1>
-
 <div class="buy-tickets">
+    <h1>Comprar Tickets</h1>
 
+    <div class="tickets-quantities">
+        <button id="decrement" class="buttons">-</button>
+        <h2 id="quantitie">0</h2>
+        <button id="increment" class="buttons">+</button>
+    </div>
 
-<?php 
-
-foreach($tickets as $ticket){
-    if($ticket->situacaoTicket == 3){ ?>
-        <a href="<?= base_url('buy'. '/' . $ticket->idTicket) ?>">
-            <button type="button" class="btn btn-success"><?= $ticket->cod?></button>
-        </a>
-
-<?php
-    } else if($ticket->situacaoTicket == 1) { ?>
-        
-        <button type="button" class="btn btn-light"> <?= $ticket->cod?> </button>
-        
-<?php }
-
-
-?>
-
-<?php } ?>
+    <div class="valor"> 
+        <h2>R$</h2>
+        <h2 class="preco">0</h2>
+    </div>
+</div>
 
 </div>
+
+<script> 
+        var buttonsSetValues = document.querySelectorAll(".buttons");
+        var quantitieTickets = document.querySelector("#quantitie");
+
+        function setValueSale(button) {
+            if(button.id == 'decrement' ){
+                if(!(quantitieTickets.innerText == 0)) {
+                    
+                }
+            }
+        }
+
+        buttonsSetValues.forEach(button => {
+            setValueSale(button);
+        })
+
+        console.log(buttonsSetValues)
+
+</script>
