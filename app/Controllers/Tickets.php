@@ -34,7 +34,7 @@ class Tickets extends BaseController
             $ticketsModel->postAllowedAmount($idUser, $allowedAmountSale, $allowedAmountValidate);
         }
 
-        return redirect()->to('defineQuantities');
+        return redirect()->to('defineQuantitiesView');
         
     }
 

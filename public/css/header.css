@@ -176,3 +176,18 @@ section {
 .valor .preco {
     margin-left: 10px;
 }
+
+#quantitie {
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    border: none;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    outline: none;
+    font-size:24px ;
+}
+
+#quantitie::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

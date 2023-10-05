@@ -23,15 +23,17 @@ class Student extends BaseController
         return view('application/header').view('student/buytickets', $data).view('application/footer');
     }
 
-    public function buy($idTicket){
+    public function buy(){
         $session        = session();
 
         $user           = $session->get('user');
         $idUser         = $user->idUsuario;
 
+        $quantitieTickets = $this->request->getPost('quantitie');
+
         $ticketsModel   = new TicketsModel();
 
-        $ticketsModel->buyTicket($idUser, $idTicket);
+        $ticketsModel->buyTicket($idUser, $quantitieTickets);
 
         return redirect()->to('buytickets');
 

@@ -52,7 +52,7 @@ $routes->post('validate', 'Tickets::validateTicket');
 
 $routes->get('student', 'Student::index');
 $routes->get('buytickets', 'Student::buytickets');
-$routes->get('buy/(:num)', 'Student::buy/$1');
+$routes->post('buy', 'Student::buy');
 $routes->get('extract', 'Student::extract');
 
 $routes->get('ticketsTest', 'Tests\TicketsTest::index');

@@ -38,7 +38,6 @@ class LoginModel extends Model
         $builder->insert($data);
 
         return redirect()->to('/');
-
     }
 
     

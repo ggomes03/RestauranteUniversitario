@@ -82,54 +82,66 @@ class TicketsModel extends Model
         return $results;
     }
 
-    public function getTickets(){
+    public function getTickets($top=0){
         $db = \Config\Database::connect();
 
         $currentDate        = date('Y-m-d');
 
-        $query              = $db->table('ticket')
-                            ->where('vencimento >=', $currentDate)
-                            ->get();
+        if($top == 0) {
+            $query              = $db->table('ticket')
+                                ->where('vencimento >=', $currentDate)
+                                ->get();
+        } else {
+            $query              = $db->table('ticket')
+                                ->where('vencimento >=', $currentDate)
+                                ->where('situacaoTicket', 3)
+                                ->limit($top)
+                                ->get();
+        }
 
         $results = $query->getResult();
 
         return $results;
-        // echo '<pre>';
-        // var_dump($results);
-        // die();
     }
     
-    public function buyTicket($idUser, $idTicket){
+    public function buyTicket($idUser, $quantitieTickets){
         $db = \Config\Database::connect();
 
         $date = date('Y-m-d h:m:s');
 
-        $data = [
-            'data'          => $date,
-            'idTicket'      => $idTicket,
-            'idUsuario'     => $idUser
-        ];
-        
-        $buyed                      = count($this->getBuyed());
-        $quantitiesAllowedSale      = $this->getQuantities()[0];
-        
-        if( $buyed >= $quantitiesAllowedSale->quantidadePermitidaVenda){
-            session()->setFlashdata('error', 'Usuário com limite máximo de tickets ativos!');  
+        $chosenTickets = $this->getTickets($quantitieTickets);
 
-        } else {
-            $builder = $db->table('compraVenda');
-            $builder->insert($data);
-    
-            $dataTicket = [
-                'situacaoTicket' => 1
+
+        // echo('<pre>');
+        // var_dump($chosenTickets);
+        // die();
+
+        foreach($chosenTickets as $choseTicket){
+            $data = [
+                'data'          => $date,
+                'idTicket'      => $choseTicket->idTicket,
+                'idUsuario'     => $idUser
             ];
-    
-            $builderTicket = $db->table('ticket');
-            $builderTicket->where('idTicket', $idTicket);
-            $builderTicket->set($dataTicket)->update();
-        }
-        
 
+            $buyed                      = count($this->getBuyed());
+            $quantitiesAllowedSale      = $this->getQuantities()[0];
+        
+            if( $buyed >= $quantitiesAllowedSale->quantidadePermitidaVenda){
+                session()->setFlashdata('error', 'Usuário com limite máximo de tickets ativos!');  
+                break;
+            } else {
+                $builder = $db->table('compraVenda');
+                $builder->insert($data);
+        
+                $dataTicket = [
+                    'situacaoTicket' => 1
+                ];
+        
+                $builderTicket = $db->table('ticket');
+                $builderTicket->where('idTicket', $choseTicket->idTicket);
+                $builderTicket->set($dataTicket)->update();
+            }
+        } 
     }
 
     public function getBuyed(){
