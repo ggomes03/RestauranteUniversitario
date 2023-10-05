@@ -2,7 +2,9 @@
 
 namespace App\Models;
 
+use CodeIgniter\Database\Database;
 use CodeIgniter\Model;
+use PSpell\Config;
 
 class CardapioMenuModel extends Model
 {
@@ -14,14 +16,29 @@ class CardapioMenuModel extends Model
     {
         // Criar um array associativo com os dados a serem inseridos
         $dadosInsercao = [
-            'Data' => $data,
-            'NomePrato' => $nomePrato,
-            'DiaSemana' => $diaSemana,
+            'idPrato' => $nomePrato,
+            'Data' => $diaSemana,
+            
         ];
 
-        // Inserir os dados na tabela 'Cardapios'
-        $inserido = $this->insert($dadosInsercao);
+        $db = \Config\Database::connect();
 
-        return $inserido; // Retorna true se inserido com sucesso, senão false
+        $builder = $db->table('cardapios');
+        $builder->insert($dadosInsercao);
+
+        // Inserir os dados na tabela 'Cardapios'
+        // $inserido = $this->insert($dadosInsercao);
+
+        // return $inserido; // Retorna true se inserido com sucesso, senão false
     }
+
+    // Função para buscar todos os pratos do banco de dados
+    public function buscarPratos()
+{
+    return $this->db->table('Pratos')
+                    ->select('*')
+                    ->get()
+                    ->getResult();
 }
+}
+
