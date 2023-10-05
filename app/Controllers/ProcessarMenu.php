@@ -8,7 +8,11 @@ class ProcessarMenu extends BaseController
 {
     public function index()
     {
-        return view('application/header') . view('cardapio/menu'); // Alteração aqui
+        // Chamando a função listarPratos para buscar os pratos do banco de dados
+        $pratos = $this->listarPratos();
+
+        // Passando os pratos para a view
+        return view('application/header', ['pratos' => $pratos]) . view('cardapio/menu', ['pratos' => $pratos]);
     }
 
     public function processaMenu()
@@ -27,15 +31,27 @@ class ProcessarMenu extends BaseController
             $inserido = $model->inserirPrato($data, $nomePrato, $diaSemana);
 
             if ($inserido) {
-                // Redireciona com uma mensagem de sucesso, você pode personalizar a mensagem
-                return redirect()->to('processarMenu')->with('success', 'Prato cadastrado com sucesso!');
+                // Redireciona com uma mensagem de sucesso
+                return redirect()->to('menu')->with('success', 'Prato cadastrado com sucesso!');
             } else {
-                // Redireciona com uma mensagem de erro, você pode personalizar a mensagem
-                return redirect()->to('processarMenu')->with('error', 'Erro ao cadastrar o prato.');
+                // Redireciona com uma mensagem de erro
+                return redirect()->to('menu')->with('error', 'Erro ao cadastrar o prato.');
             }
         } else {
             // Redireciona com uma mensagem de erro se algum campo estiver em branco
-            return redirect()->to('processarMenu')->with('error', 'Todos os campos são obrigatórios.');
+            return redirect()->to('menu')->with('error', 'Todos os campos são obrigatórios.');
         }
     }
+
+    public function listarPratos()
+    {
+        // Instancie o modelo CardapioMenuModel
+        $model = new CardapioMenuModel();
+
+        // Chama a função buscarPratos para obter os pratos
+        $pratos = $model->buscarPratos();
+
+        return $pratos;
+    }
 }
+
