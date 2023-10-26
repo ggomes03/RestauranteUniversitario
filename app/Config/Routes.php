@@ -61,6 +61,8 @@ $routes->get('ticketsTest', 'Tests\TicketsTest::index');
 $routes->get('menu', 'ProcessarMenu::index');
 $routes->post('processaMenu', 'ProcessarMenu::processaMenu');
 
+$routes->get('report', 'Prad::report');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

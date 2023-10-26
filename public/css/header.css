@@ -191,3 +191,34 @@ section {
 #quantitie::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
+
+.tables-extracts-student {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 10px;
+}
+
+.container-tables {
+    display: flex;
+    
+}
+
+.table {
+    
+}
+
+
+.tables-extracts-report {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.report-table {
+    width: 90%;
+    margin: 0 20px;
+}

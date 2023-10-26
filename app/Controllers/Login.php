@@ -46,7 +46,7 @@ class Login extends BaseController
             return redirect()->to('login');
         } else {
             if($user->tipoUsuario == 1){
-                return redirect()->to('/');
+                return redirect()->to('student');
             } else if($user->tipoUsuario == 2){
                 return redirect()->to('prad');
             }

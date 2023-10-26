@@ -5,7 +5,7 @@
 <div class="container-form">
 
 <?= form_open('createSale');?>
-
+    <h1>Criar Promoção</h1>
     <div class="container">
         <label for="valueSale">Valor Promoção:</label>
         <input required class="form-control" type="number" name="valueSale" id="valueSale" min="0" step="0.01">

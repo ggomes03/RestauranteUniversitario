@@ -116,32 +116,38 @@ class TicketsModel extends Model
         // var_dump($chosenTickets);
         // die();
 
-        foreach($chosenTickets as $choseTicket){
-            $data = [
-                'data'          => $date,
-                'idTicket'      => $choseTicket->idTicket,
-                'idUsuario'     => $idUser
-            ];
-
-            $buyed                      = count($this->getBuyed());
-            $quantitiesAllowedSale      = $this->getQuantities()[0];
-        
-            if( $buyed >= $quantitiesAllowedSale->quantidadePermitidaVenda){
-                session()->setFlashdata('error', 'Usuário com limite máximo de tickets ativos!');  
-                break;
-            } else {
-                $builder = $db->table('compraVenda');
-                $builder->insert($data);
-        
-                $dataTicket = [
-                    'situacaoTicket' => 1
+        if($chosenTickets) {
+            foreach($chosenTickets as $choseTicket){
+                $data = [
+                    'data'          => $date,
+                    'idTicket'      => $choseTicket->idTicket,
+                    'idUsuario'     => $idUser
                 ];
+    
+                $buyed                      = count($this->getBuyed());
+                $quantitiesAllowedSale      = $this->getQuantities()[0];
+                
+                if( $buyed >= $quantitiesAllowedSale->quantidadePermitidaVenda){
+                    session()->setFlashdata('error', 'Usuário com limite máximo de tickets ativos!');  
+                    break;
+                } else {
+                    $builder = $db->table('compraVenda');
+                    $builder->insert($data);
+            
+                    $dataTicket = [
+                        'situacaoTicket' => 1
+                    ];
+            
+                    $builderTicket = $db->table('ticket');
+                    $builderTicket->where('idTicket', $choseTicket->idTicket);
+                    $builderTicket->set($dataTicket)->update();
+                }
+            } 
+        } else {
+            session()->setFlashdata('error', 'Nenhum Ticket disponível para venda!');
+        }
+
         
-                $builderTicket = $db->table('ticket');
-                $builderTicket->where('idTicket', $choseTicket->idTicket);
-                $builderTicket->set($dataTicket)->update();
-            }
-        } 
     }
 
     public function getBuyed(){

@@ -17,8 +17,6 @@
         <label for="pass">Senha</label>
     </div>
 
-
-
     <button class="btn btn-primary" type="submit">Login</button>
 
     <a href="<?= base_url('register')?>">Cadastre-se</a>

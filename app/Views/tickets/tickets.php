@@ -12,6 +12,9 @@ $TicketsModel = new TicketsModel;
     <?php endif; ?>
 
     <?= form_open('insertTickets'); ?>
+
+    <h1>Criar Tickets</h1>
+
     <div class="container">
         <label for="number">Valor</label>
         <input required class="form-control" min="0" type="number" name="valueTicket" id="valueTicket" step="0.01">

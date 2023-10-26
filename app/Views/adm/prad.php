@@ -17,4 +17,7 @@
   <li class="nav-item nav-item-prad">
     <a class="nav-link active" href="<?= base_url('menu') ?>" aria-current="page">Cadastrar Menu Semanal</a>
   </li>
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="<?= base_url('report') ?>" aria-current="page">Relatório</a>
+  </li>
 </ul>

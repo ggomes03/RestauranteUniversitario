@@ -5,6 +5,7 @@
 <div class="container-form">
 
 <?= form_open('defineQuantities'); ?>
+    <h1>Quantidades Permitidas</h1>
     <div class="container">
         <label for="">Quantidade permitida para compra</label>
         <input class="form-control" type="number" name="allowedAmountSale" id="allowedAmountSale" min="0">
