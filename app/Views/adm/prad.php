@@ -21,6 +21,10 @@
     <a class="nav-link active" href="<?= base_url('report') ?>" aria-current="page">Relatório</a>
   </li>
   <li class="nav-item nav-item-prad">
+<<<<<<< HEAD
     <a class="nav-link active" href="<?= base_url('users') ?>" aria-current="page">Usuários</a>
+=======
+    <a class="nav-link active" href="<?= base_url('feedback') ?>" aria-current="page">Feedback Discentes</a>
+>>>>>>> 743a5ef01c3d44c57b362727156d19fbd55ea54a
   </li>
 </ul>

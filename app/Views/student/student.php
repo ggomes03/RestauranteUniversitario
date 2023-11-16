@@ -14,5 +14,10 @@
         Extrato
     </a>
   </li>
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="<?= base_url('answerform') ?>" aria-current="page">
+        Formulário
+    </a>
+  </li>
   
 </ul>

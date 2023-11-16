@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INFO - 2023-11-16 16:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-16 16:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-16 16:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
@@ -182,3 +183,1408 @@ INFO - 2023-11-16 18:19:50 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-11-16 18:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-16 18:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-11-16 18:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
+INFO - 2023-11-16 03:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 03:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 03:55:24 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'ru', 3306, '', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Models\LoginModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Login.php(26): App\Models\LoginModel->getUser('hannaingrid05@h...', '1092')
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Login->auth()
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\RestauranteUniversitario\app\Models\LoginModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Login.php(26): App\Models\LoginModel->getUser('hannaingrid05@h...', '1092')
+#5 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Login->auth()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-16 03:55:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `email` = :email:
+AND `senha` = :senha:', [...], false)
+ 3 APPPATH\Models\LoginModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Login.php(26): App\Models\LoginModel->getUser('hannaingrid05@hotmail.com', '1092')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->auth()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 03:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 03:55:42 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'ru', 3306, '', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Models\LoginModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Login.php(26): App\Models\LoginModel->getUser('hannaingrid05@h...', '1092')
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Login->auth()
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\RestauranteUniversitario\app\Models\LoginModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Login.php(26): App\Models\LoginModel->getUser('hannaingrid05@h...', '1092')
+#5 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Login->auth()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-16 03:55:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `email` = :email:
+AND `senha` = :senha:', [...], false)
+ 3 APPPATH\Models\LoginModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Login.php(26): App\Models\LoginModel->getUser('hannaingrid05@hotmail.com', '1092')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->auth()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 03:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 03:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 03:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 03:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 03:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 03:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 03:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 03:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 03:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 03:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 03:57:57 --> mysqli_sql_exception: Table 'ru.alternativas' doesn't exist in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `respost...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `respost...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `respost...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `respost...', Array, false)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FormModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Forms.php(14): App\Models\FormModel->getAlternativas()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+#8 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-16 03:57:57 --> Table 'ru.alternativas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `resposta`
+FROM `alternativas`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `resposta`
+FROM `alternativas`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `resposta`
+FROM `alternativas`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `resposta`
+FROM `alternativas`', [], false)
+ 5 APPPATH\Models\FormModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Forms.php(14): App\Models\FormModel->getAlternativas()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 04:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 04:04:06 --> mysqli_sql_exception: Table 'ru.alternativas' doesn't exist in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `respost...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `respost...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `respost...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `respost...', Array, false)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FormModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Forms.php(14): App\Models\FormModel->getAlternativas()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+#8 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-16 04:04:06 --> Table 'ru.alternativas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `resposta`
+FROM `alternativas`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `resposta`
+FROM `alternativas`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `resposta`
+FROM `alternativas`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `resposta`
+FROM `alternativas`', [], false)
+ 5 APPPATH\Models\FormModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Forms.php(14): App\Models\FormModel->getAlternativas()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 04:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:15:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 04:22:10 --> Undefined property: stdClass::$id
+in APPPATH\Views\student\answerform.php on line 19.
+ 1 APPPATH\Views\student\answerform.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\student\\answerform.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\student\\answerform.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('student/answerform', [], true)
+ 5 APPPATH\Controllers\Forms.php(18): view('student/answerform', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 04:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 04:22:13 --> Undefined property: stdClass::$id
+in APPPATH\Views\student\answerform.php on line 19.
+ 1 APPPATH\Views\student\answerform.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\student\\answerform.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\student\\answerform.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('student/answerform', [], true)
+ 5 APPPATH\Controllers\Forms.php(18): view('student/answerform', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 04:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 04:26:41 --> Undefined property: stdClass::$idPergunta
+in APPPATH\Views\student\answerform.php on line 19.
+ 1 APPPATH\Views\student\answerform.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idPergunta', 'C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\student\\answerform.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\student\\answerform.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('student/answerform', [], true)
+ 5 APPPATH\Controllers\Forms.php(18): view('student/answerform', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 04:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 04:27:51 --> mysqli_sql_exception: Unknown column 'idAlternativa' in 'field list' in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `respost...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `respost...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `respost...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `respost...', Array, false)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FormModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Forms.php(14): App\Models\FormModel->getAlternativas()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+#8 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-16 04:27:51 --> Unknown column 'idAlternativa' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `resposta`, `idAlternativa`
+FROM `alternativas`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `resposta`, `idAlternativa`
+FROM `alternativas`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `resposta`, `idAlternativa`
+FROM `alternativas`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `resposta`, `idAlternativa`
+FROM `alternativas`', [], false)
+ 5 APPPATH\Models\FormModel.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Forms.php(14): App\Models\FormModel->getAlternativas()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 04:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:57:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 04:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 05:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 05:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 05:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 05:31:55 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\adm\feedback.php on line 14.
+ 1 APPPATH\Views\adm\feedback.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\adm\\feedback.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\adm\\feedback.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('adm/feedback', [], true)
+ 5 APPPATH\Controllers\Feedback.php(17): view('adm/feedback', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 05:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 05:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 05:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 05:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 05:34:10 --> Undefined variable $alternativas
+in APPPATH\Views\adm\feedback.php on line 11.
+ 1 APPPATH\Views\adm\feedback.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alternativas', 'C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\adm\\feedback.php', 11)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\adm\\feedback.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('adm/feedback', [], true)
+ 5 APPPATH\Controllers\Feedback.php(17): view('adm/feedback', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 05:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 05:34:51 --> mysqli_sql_exception: Table 'ru.perguntas' doesn't exist in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FeedbackModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+#8 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-16 05:34:51 --> Table 'ru.perguntas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `perguntas`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `perguntas`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `perguntas`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `perguntas`', [], false)
+ 5 APPPATH\Models\FeedbackModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 05:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 05:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 05:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 05:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 05:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 05:35:12 --> mysqli_sql_exception: Table 'ru.perguntas' doesn't exist in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FeedbackModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+#8 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-16 05:35:12 --> Table 'ru.perguntas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `perguntas`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `perguntas`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `perguntas`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `perguntas`', [], false)
+ 5 APPPATH\Models\FeedbackModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 05:36:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 05:36:33 --> Undefined property: stdClass::$id
+in APPPATH\Models\FeedbackModel.php on line 20.
+ 1 APPPATH\Models\FeedbackModel.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Models\\FeedbackModel.php', 20)
+ 2 APPPATH\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 05:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 05:48:02 --> Undefined property: stdClass::$id
+in APPPATH\Models\FeedbackModel.php on line 20.
+ 1 APPPATH\Models\FeedbackModel.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id', 'C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Models\\FeedbackModel.php', 20)
+ 2 APPPATH\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 05:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 05:48:30 --> mysqli_sql_exception: Unknown column 'idPergunta' in 'where clause' in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(`val...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`val...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`val...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`val...', Array, false)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FeedbackModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+#8 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-16 05:48:30 --> Unknown column 'idPergunta' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(`valor`) AS `total_score`
+FROM `alternativas`
+WHERE `idPergunta` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`valor`) AS `total_score`
+FROM `alternativas`
+WHERE `idPergunta` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`valor`) AS `total_score`
+FROM `alternativas`
+WHERE `idPergunta` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`valor`) AS `total_score`
+FROM `alternativas`
+WHERE `idPergunta` = :idPergunta:', [...], false)
+ 5 APPPATH\Models\FeedbackModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-16 05:51:04 --> mysqli_sql_exception: Unknown column 'idPergunta' in 'where clause' in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(`val...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`val...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`val...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`val...', Array, false)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FeedbackModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+#8 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-16 05:51:04 --> Unknown column 'idPergunta' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(`valor`) AS `total_score`
+FROM `alternativas`
+WHERE `idPergunta` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`valor`) AS `total_score`
+FROM `alternativas`
+WHERE `idPergunta` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`valor`) AS `total_score`
+FROM `alternativas`
+WHERE `idPergunta` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`valor`) AS `total_score`
+FROM `alternativas`
+WHERE `idPergunta` = :idPergunta:', [...], false)
+ 5 APPPATH\Models\FeedbackModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 05:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 05:51:08 --> mysqli_sql_exception: Unknown column 'idPergunta' in 'where clause' in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(`val...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`val...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`val...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`val...', Array, false)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FeedbackModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+#8 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-16 05:51:08 --> Unknown column 'idPergunta' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(`valor`) AS `total_score`
+FROM `alternativas`
+WHERE `idPergunta` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`valor`) AS `total_score`
+FROM `alternativas`
+WHERE `idPergunta` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`valor`) AS `total_score`
+FROM `alternativas`
+WHERE `idPergunta` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`valor`) AS `total_score`
+FROM `alternativas`
+WHERE `idPergunta` = :idPergunta:', [...], false)
+ 5 APPPATH\Models\FeedbackModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 06:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 06:01:27 --> mysqli_sql_exception: Unknown column 'idPergunta' in 'where clause' in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(`val...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`val...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`val...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`val...', Array, false)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FeedbackModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+#8 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-16 06:01:27 --> Unknown column 'idPergunta' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(`valor`) AS `total_score`
+FROM `alternativas`
+WHERE `idPergunta` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`valor`) AS `total_score`
+FROM `alternativas`
+WHERE `idPergunta` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`valor`) AS `total_score`
+FROM `alternativas`
+WHERE `idPergunta` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`valor`) AS `total_score`
+FROM `alternativas`
+WHERE `idPergunta` = :idPergunta:', [...], false)
+ 5 APPPATH\Models\FeedbackModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 06:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 06:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 06:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 06:08:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`pergunta->idPergunta`' at line 4 in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `valor`\n...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `valor`\n...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `valor`\n...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `valor`\n...', Array, false)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FeedbackModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+#8 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-16 06:08:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`pergunta->idPergunta`' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `valor`
+FROM `alternativas`
+JOIN `ticket` `t` ON `t`.`situacaoTicket` = `st`.`idSituacaoTicket`
+JOIN `feedback` ON `alternativas-`>`idPergunta =` `pergunta->idPergunta`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `valor`
+FROM `alternativas`
+JOIN `ticket` `t` ON `t`.`situacaoTicket` = `st`.`idSituacaoTicket`
+JOIN `feedback` ON `alternativas-`>`idPergunta =` `pergunta->idPergunta`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `valor`
+FROM `alternativas`
+JOIN `ticket` `t` ON `t`.`situacaoTicket` = `st`.`idSituacaoTicket`
+JOIN `feedback` ON `alternativas-`>`idPergunta =` `pergunta->idPergunta`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `valor`
+FROM `alternativas`
+JOIN `ticket` `t` ON `t`.`situacaoTicket` = `st`.`idSituacaoTicket`
+JOIN `feedback` ON `alternativas-`>`idPergunta =` `pergunta->idPergunta`', [], false)
+ 5 APPPATH\Models\FeedbackModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 06:20:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 06:20:41 --> mysqli_sql_exception: Table 'ru.respostas' doesn't exist in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alterna...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alterna...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alterna...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alterna...', Array, false)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FeedbackModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+#8 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-16 06:20:41 --> Table 'ru.respostas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alternativas`.`idAlternativas` AS `alternativa_id`, `alternativas`.`valor`, `COUNT resposta` AS `resposta_count`
+FROM `respostas`
+GROUP BY `alternativas`.`idAlternativas`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alternativas`.`idAlternativas` AS `alternativa_id`, `alternativas`.`valor`, `COUNT resposta` AS `resposta_count`
+FROM `respostas`
+GROUP BY `alternativas`.`idAlternativas`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alternativas`.`idAlternativas` AS `alternativa_id`, `alternativas`.`valor`, `COUNT resposta` AS `resposta_count`
+FROM `respostas`
+GROUP BY `alternativas`.`idAlternativas`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alternativas`.`idAlternativas` AS `alternativa_id`, `alternativas`.`valor`, `COUNT resposta` AS `resposta_count`
+FROM `respostas`
+GROUP BY `alternativas`.`idAlternativas`', [], false)
+ 5 APPPATH\Models\FeedbackModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 06:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 06:22:10 --> mysqli_sql_exception: Table 'ru.respostas' doesn't exist in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alterna...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alterna...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alterna...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alterna...', Array, false)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FeedbackModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+#8 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-16 06:22:10 --> Table 'ru.respostas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alternativas`.`idAlternativas` AS `alternativa_id`, `alternativas`.`valor`, COUNT (alternativa.resposta) AS resposta_count
+FROM `respostas`
+GROUP BY `alternativas`.`idAlternativas`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alternativas`.`idAlternativas` AS `alternativa_id`, `alternativas`.`valor`, COUNT (alternativa.resposta) AS resposta_count
+FROM `respostas`
+GROUP BY `alternativas`.`idAlternativas`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alternativas`.`idAlternativas` AS `alternativa_id`, `alternativas`.`valor`, COUNT (alternativa.resposta) AS resposta_count
+FROM `respostas`
+GROUP BY `alternativas`.`idAlternativas`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alternativas`.`idAlternativas` AS `alternativa_id`, `alternativas`.`valor`, COUNT (alternativa.resposta) AS resposta_count
+FROM `respostas`
+GROUP BY `alternativas`.`idAlternativas`', [], false)
+ 5 APPPATH\Models\FeedbackModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 06:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 06:25:39 --> mysqli_sql_exception: Table 'ru.resposta' doesn't exist in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alterna...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alterna...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alterna...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alterna...', Array, false)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FeedbackModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+#8 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-16 06:25:39 --> Table 'ru.resposta' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alternativas`.`idAlternativas` AS `alternativa_id`, `alternativas`.`valor`, COUNT (alternativa.resposta) AS resposta_count
+FROM `resposta`
+GROUP BY `alternativas`.`idAlternativas`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alternativas`.`idAlternativas` AS `alternativa_id`, `alternativas`.`valor`, COUNT (alternativa.resposta) AS resposta_count
+FROM `resposta`
+GROUP BY `alternativas`.`idAlternativas`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alternativas`.`idAlternativas` AS `alternativa_id`, `alternativas`.`valor`, COUNT (alternativa.resposta) AS resposta_count
+FROM `resposta`
+GROUP BY `alternativas`.`idAlternativas`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alternativas`.`idAlternativas` AS `alternativa_id`, `alternativas`.`valor`, COUNT (alternativa.resposta) AS resposta_count
+FROM `resposta`
+GROUP BY `alternativas`.`idAlternativas`', [], false)
+ 5 APPPATH\Models\FeedbackModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 06:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 06:26:20 --> mysqli_sql_exception: FUNCTION ru.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alterna...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alterna...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alterna...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alterna...', Array, false)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FeedbackModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+#8 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-16 06:26:20 --> FUNCTION ru.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `alternativas`.`idAlternativas` AS `alternativa_id`, `alternativas`.`valor`, COUNT (alternativa.resposta) AS resposta_count
+FROM `alternativas`
+GROUP BY `alternativas`.`idAlternativas`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alternativas`.`idAlternativas` AS `alternativa_id`, `alternativas`.`valor`, COUNT (alternativa.resposta) AS resposta_count
+FROM `alternativas`
+GROUP BY `alternativas`.`idAlternativas`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alternativas`.`idAlternativas` AS `alternativa_id`, `alternativas`.`valor`, COUNT (alternativa.resposta) AS resposta_count
+FROM `alternativas`
+GROUP BY `alternativas`.`idAlternativas`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `alternativas`.`idAlternativas` AS `alternativa_id`, `alternativas`.`valor`, COUNT (alternativa.resposta) AS resposta_count
+FROM `alternativas`
+GROUP BY `alternativas`.`idAlternativas`', [], false)
+ 5 APPPATH\Models\FeedbackModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Feedback.php(13): App\Models\FeedbackModel->getStatistics()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 06:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 06:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 06:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 06:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 06:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 06:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 06:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 06:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 06:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 06:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 06:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 07:01:28 --> Undefined property: stdClass::$resposta
+in APPPATH\Views\adm\feedback.php on line 39.
+ 1 APPPATH\Views\adm\feedback.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$resposta', 'C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\adm\\feedback.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\adm\\feedback.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('adm/feedback', [], true)
+ 5 APPPATH\Controllers\Feedback.php(17): view('adm/feedback', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 07:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 07:05:57 --> Undefined property: stdClass::$resposta_count
+in APPPATH\Views\adm\feedback.php on line 40.
+ 1 APPPATH\Views\adm\feedback.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$resposta_count', 'C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\adm\\feedback.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\adm\\feedback.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('adm/feedback', [], true)
+ 5 APPPATH\Controllers\Feedback.php(17): view('adm/feedback', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 07:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 07:06:26 --> Undefined property: stdClass::$resposta_count
+in APPPATH\Views\adm\feedback.php on line 40.
+ 1 APPPATH\Views\adm\feedback.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$resposta_count', 'C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\adm\\feedback.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\adm\\feedback.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('adm/feedback', [], true)
+ 5 APPPATH\Controllers\Feedback.php(17): view('adm/feedback', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 07:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:07:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:07:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:13:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 07:25:14 --> Undefined variable $perguntas
+in APPPATH\Views\student\answerform.php on line 12.
+ 1 APPPATH\Views\student\answerform.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $perguntas', 'C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\student\\answerform.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\student\\answerform.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('student/answerform', [], true)
+ 5 APPPATH\Controllers\Forms.php(21): view('student/answerform', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 07:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 07:25:50 --> Undefined variable $Alternativas
+in APPPATH\Views\student\answerform.php on line 17.
+ 1 APPPATH\Views\student\answerform.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Alternativas', 'C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\student\\answerform.php', 17)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\student\\answerform.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('student/answerform', [], true)
+ 5 APPPATH\Controllers\Forms.php(21): view('student/answerform', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 07:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 07:27:17 --> Undefined variable $perguntas
+in APPPATH\Views\student\answerform.php on line 12.
+ 1 APPPATH\Views\student\answerform.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $perguntas', 'C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\student\\answerform.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\student\\answerform.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('student/answerform', [], true)
+ 5 APPPATH\Controllers\Forms.php(21): view('student/answerform', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 07:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 07:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 08:01:04 --> Call to undefined method App\Models\FormModel::getPerguntas
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Forms.php(31): CodeIgniter\Model->__call('getPerguntas', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 08:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 08:01:27 --> Call to undefined method App\Models\FormModel::getPerguntas
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Forms.php(31): CodeIgniter\Model->__call('getPerguntas', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 08:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:18:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 08:23:38 --> Undefined variable $Alternativas
+in APPPATH\Views\student\answerform.php on line 16.
+ 1 APPPATH\Views\student\answerform.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Alternativas', 'C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\student\\answerform.php', 16)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\student\\answerform.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('student/answerform', [], true)
+ 5 APPPATH\Controllers\Forms.php(31): view('student/answerform', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 08:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:26:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:31:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 10:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 10:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 10:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 10:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 10:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 10:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 10:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 10:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 10:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 10:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 10:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 10:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 10:35:03 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 262144 bytes)
+in SYSTEMPATH\Config\Factories.php on line 86.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-11-16 10:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 10:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 10:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 10:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:17:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 16:17:48 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes)
+in APPPATH\Views\student\answerform.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-11-16 16:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 16:24:18 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes)
+in APPPATH\Views\student\answerform.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-11-16 16:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:26:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 16:28:17 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes)
+in APPPATH\Views\student\answerform.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-11-16 16:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 16:36:08 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes)
+in APPPATH\Views\student\answerform.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-11-16 16:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 16:41:59 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 262144 bytes)
+in SYSTEMPATH\Config\Factories.php on line 86.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-11-16 16:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 16:44:09 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes)
+in APPPATH\Views\student\answerform.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-11-16 16:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 16:45:23 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes)
+in APPPATH\Views\student\answerform.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-11-16 16:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 17:12:36 --> Call to undefined method App\Models\FormModel::salvarRespostas
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Forms.php(25): CodeIgniter\Model->__call('salvarRespostas', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 17:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 17:24:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 2 in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO fee...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO fee...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO fee...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FormModel.php(38): CodeIgniter\Database\BaseConnection->query('INSERT INTO fee...', Array)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Forms.php(25): App\Models\FormModel->salvarRespostas(NULL, NULL)
+#5 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-16 17:24:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )')
+ 4 APPPATH\Models\FormModel.php(38): CodeIgniter\Database\BaseConnection->query('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )', [...])
+ 5 APPPATH\Controllers\Forms.php(25): App\Models\FormModel->salvarRespostas(null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 17:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 17:24:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 2 in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO fee...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO fee...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO fee...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FormModel.php(38): CodeIgniter\Database\BaseConnection->query('INSERT INTO fee...', Array)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Forms.php(25): App\Models\FormModel->salvarRespostas(NULL, NULL)
+#5 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-16 17:24:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )')
+ 4 APPPATH\Models\FormModel.php(38): CodeIgniter\Database\BaseConnection->query('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )', [...])
+ 5 APPPATH\Controllers\Forms.php(25): App\Models\FormModel->salvarRespostas(null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 17:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 17:25:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 2 in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO fee...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO fee...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO fee...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FormModel.php(38): CodeIgniter\Database\BaseConnection->query('INSERT INTO fee...', Array)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Forms.php(25): App\Models\FormModel->salvarRespostas(NULL, NULL)
+#5 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-16 17:25:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )')
+ 4 APPPATH\Models\FormModel.php(38): CodeIgniter\Database\BaseConnection->query('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )', [...])
+ 5 APPPATH\Controllers\Forms.php(25): App\Models\FormModel->salvarRespostas(null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 17:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 17:28:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 2 in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO fee...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO fee...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO fee...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FormModel.php(38): CodeIgniter\Database\BaseConnection->query('INSERT INTO fee...', Array)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Forms.php(26): App\Models\FormModel->salvarRespostas(NULL, NULL)
+#5 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-16 17:28:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )')
+ 4 APPPATH\Models\FormModel.php(38): CodeIgniter\Database\BaseConnection->query('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )', [...])
+ 5 APPPATH\Controllers\Forms.php(26): App\Models\FormModel->salvarRespostas(null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 17:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 17:28:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 2 in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO fee...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO fee...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO fee...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FormModel.php(38): CodeIgniter\Database\BaseConnection->query('INSERT INTO fee...', Array)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Forms.php(26): App\Models\FormModel->salvarRespostas(NULL, NULL)
+#5 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-16 17:28:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )')
+ 4 APPPATH\Models\FormModel.php(38): CodeIgniter\Database\BaseConnection->query('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )', [...])
+ 5 APPPATH\Controllers\Forms.php(26): App\Models\FormModel->salvarRespostas(null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 17:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 17:30:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 2 in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO fee...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO fee...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO fee...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FormModel.php(38): CodeIgniter\Database\BaseConnection->query('INSERT INTO fee...', Array)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Forms.php(26): App\Models\FormModel->salvarRespostas(NULL, NULL)
+#5 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-16 17:30:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )')
+ 4 APPPATH\Models\FormModel.php(38): CodeIgniter\Database\BaseConnection->query('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )', [...])
+ 5 APPPATH\Controllers\Forms.php(26): App\Models\FormModel->salvarRespostas(null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 17:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 17:33:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 2 in C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\RestauranteUniversitario\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO fee...', 0)
+#1 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO fee...')
+#2 C:\xampp\htdocs\RestauranteUniversitario\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO fee...')
+#3 C:\xampp\htdocs\RestauranteUniversitario\app\Models\FormModel.php(38): CodeIgniter\Database\BaseConnection->query('INSERT INTO fee...', Array)
+#4 C:\xampp\htdocs\RestauranteUniversitario\app\Controllers\Forms.php(26): App\Models\FormModel->salvarRespostas(NULL, NULL)
+#5 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+#6 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+#7 C:\xampp\htdocs\RestauranteUniversitario\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\RestauranteUniversitario\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-16 17:33:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )')
+ 4 APPPATH\Models\FormModel.php(38): CodeIgniter\Database\BaseConnection->query('INSERT INTO feedback(idPergunta, idAlternativas) 
+        VALUES (, )', [...])
+ 5 APPPATH\Controllers\Forms.php(26): App\Models\FormModel->salvarRespostas(null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 17:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 17:38:27 --> The route for "<!-- DEBUG-VIEW START 2 APPPATH\Views\student\student.php -->
+
+<ul class="nav justify-content-center nav-prad">
+
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="https://localhost/RestauranteUniversitario/public/buytickets" aria-current="page">
+        Comprar Tickets
+    </a>
+  </li>
+
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="https://localhost/RestauranteUniversitario/public/extract" aria-current="page">
+        Extrato
+    </a>
+  </li>
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="https://localhost/RestauranteUniversitario/public/answerform" aria-current="page">
+        Formulário
+    </a>
+  </li>
+  
+</ul>
+<!-- DEBUG-VIEW ENDED 2 APPPATH\Views\student\student.php -->
+" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('<!-- DEBUG-VIEW START 2 APPPATH\\Views\\student\\student.php -->
+
+<ul class="nav justify-content-center nav-prad">
+
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="https://localhost/RestauranteUniversitario/public/buytickets" aria-current="page">
+        Comprar Tickets
+    </a>
+  </li>
+
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="https://localhost/RestauranteUniversitario/public/extract" aria-current="page">
+        Extrato
+    </a>
+  </li>
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="https://localhost/RestauranteUniversitario/public/answerform" aria-current="page">
+        Formulário
+    </a>
+  </li>
+  
+</ul>
+<!-- DEBUG-VIEW ENDED 2 APPPATH\\Views\\student\\student.php -->
+')
+ 2 SYSTEMPATH\Common.php(876): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Views\student\answerform.php(33): redirect('<!-- DEBUG-VIEW START 2 APPPATH\\Views\\student\\student.php -->
+
+<ul class="nav justify-content-center nav-prad">
+
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="https://localhost/RestauranteUniversitario/public/buytickets" aria-current="page">
+        Comprar Tickets
+    </a>
+  </li>
+
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="https://localhost/RestauranteUniversitario/public/extract" aria-current="page">
+        Extrato
+    </a>
+  </li>
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="https://localhost/RestauranteUniversitario/public/answerform" aria-current="page">
+        Formulário
+    </a>
+  </li>
+  
+</ul>
+<!-- DEBUG-VIEW ENDED 2 APPPATH\\Views\\student\\student.php -->
+')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\student\\answerform.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('student/answerform', [], true)
+ 7 APPPATH\Controllers\Forms.php(17): view('student/answerform', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 17:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:38:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 17:38:29 --> The route for "<!-- DEBUG-VIEW START 2 APPPATH\Views\student\student.php -->
+
+<ul class="nav justify-content-center nav-prad">
+
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="https://localhost/RestauranteUniversitario/public/buytickets" aria-current="page">
+        Comprar Tickets
+    </a>
+  </li>
+
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="https://localhost/RestauranteUniversitario/public/extract" aria-current="page">
+        Extrato
+    </a>
+  </li>
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="https://localhost/RestauranteUniversitario/public/answerform" aria-current="page">
+        Formulário
+    </a>
+  </li>
+  
+</ul>
+<!-- DEBUG-VIEW ENDED 2 APPPATH\Views\student\student.php -->
+" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('<!-- DEBUG-VIEW START 2 APPPATH\\Views\\student\\student.php -->
+
+<ul class="nav justify-content-center nav-prad">
+
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="https://localhost/RestauranteUniversitario/public/buytickets" aria-current="page">
+        Comprar Tickets
+    </a>
+  </li>
+
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="https://localhost/RestauranteUniversitario/public/extract" aria-current="page">
+        Extrato
+    </a>
+  </li>
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="https://localhost/RestauranteUniversitario/public/answerform" aria-current="page">
+        Formulário
+    </a>
+  </li>
+  
+</ul>
+<!-- DEBUG-VIEW ENDED 2 APPPATH\\Views\\student\\student.php -->
+')
+ 2 SYSTEMPATH\Common.php(876): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Views\student\answerform.php(33): redirect('<!-- DEBUG-VIEW START 2 APPPATH\\Views\\student\\student.php -->
+
+<ul class="nav justify-content-center nav-prad">
+
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="https://localhost/RestauranteUniversitario/public/buytickets" aria-current="page">
+        Comprar Tickets
+    </a>
+  </li>
+
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="https://localhost/RestauranteUniversitario/public/extract" aria-current="page">
+        Extrato
+    </a>
+  </li>
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="https://localhost/RestauranteUniversitario/public/answerform" aria-current="page">
+        Formulário
+    </a>
+  </li>
+  
+</ul>
+<!-- DEBUG-VIEW ENDED 2 APPPATH\\Views\\student\\student.php -->
+')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\RestauranteUniversitario\\app\\Views\\student\\answerform.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('student/answerform', [], true)
+ 7 APPPATH\Controllers\Forms.php(17): view('student/answerform', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Forms->answerform()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Forms))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 17:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 18:04:33 --> Class "App\Controllers\FeedbackModel" not found
+in APPPATH\Controllers\Feedback.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 18:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 18:04:41 --> Class "App\Controllers\FeedbackModel" not found
+in APPPATH\Controllers\Feedback.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 18:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 18:07:55 --> Call to undefined method App\Models\FeedbackModel::getIdPergunta
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Feedback.php(10): CodeIgniter\Model->__call('getIdPergunta', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Feedback->feedbackView()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 18:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+>>>>>>> 743a5ef01c3d44c57b362727156d19fbd55ea54a
