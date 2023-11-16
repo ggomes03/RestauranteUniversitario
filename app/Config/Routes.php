@@ -57,6 +57,10 @@ $routes->get('extract', 'Student::extract');
 
 $routes->get('ticketsTest', 'Tests\TicketsTest::index');
 
+$routes->get('answerform', 'Forms::answerform');
+$routes->post('answerform', 'Student::index');
+
+$routes->get('feedback', 'Feedback::feedbackview');
 // Rota para o menu
 $routes->get('menu', 'ProcessarMenu::index');
 $routes->post('processaMenu', 'ProcessarMenu::processaMenu');
