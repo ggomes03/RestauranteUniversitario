@@ -63,6 +63,10 @@ $routes->post('processaMenu', 'ProcessarMenu::processaMenu');
 
 $routes->get('report', 'Prad::report');
 
+$routes->get('users', 'Users::index');
+
+$routes->get('setAdm/(:num)', 'Users::setAdm/$1');
+$routes->get('setStudent/(:num)', 'Users::setStudent/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

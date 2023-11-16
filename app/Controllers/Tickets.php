@@ -7,11 +7,20 @@ use PhpParser\Node\Stmt\Echo_;
 class Tickets extends BaseController
 {
     public function index(){
-        return view('application/header').view('tickets/tickets').view('application/footer');
+        if(session()->get('user')->tipoUsuario == 1 ){
+            return redirect('/');
+        } else {
+            return view('application/header').view('tickets/tickets').view('application/footer');
+
+        }
     }
 
     public function defineQuantitiesView(){
-        return view('application/header').view('tickets/definequantities').view('application/footer');
+        if(session()->get('user')->tipoUsuario == 1 ){
+            return redirect('/');
+        } else {
+            return view('application/header').view('tickets/definequantities').view('application/footer');
+        }
     }
 
     public function defineQuantities(){
@@ -77,7 +86,11 @@ class Tickets extends BaseController
     }
 
     public function validateTicketsView(){
-        return view('application/header').view('tickets/validateticket').view('application/footer');
+        if(session()->get('user')->tipoUsuario == 1 ){
+            return redirect('/');
+        } else {
+            return view('application/header').view('tickets/validateticket').view('application/footer');
+        }
         
     }
 

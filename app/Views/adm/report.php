@@ -26,7 +26,6 @@
     </div>
 </div>
 <div class="tables-extracts-report">
-   
     <table class="table table-sm report-table" border="1">
         <thead>
             <tr>
@@ -194,4 +193,6 @@
 
     
 </script>
+
+
 

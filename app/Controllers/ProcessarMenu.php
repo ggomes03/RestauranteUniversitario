@@ -12,7 +12,11 @@ class ProcessarMenu extends BaseController
         $pratos = $this->listarPratos();
 
         // Passando os pratos para a view
-        return view('application/header', ['pratos' => $pratos]) . view('cardapio/menu', ['pratos' => $pratos]);
+        if(session()->get('user')->tipoUsuario == 1 ){
+            return redirect('/');
+        } else {
+            return view('application/header', ['pratos' => $pratos]) . view('cardapio/menu', ['pratos' => $pratos]);
+        }
     }
 
     public function processaMenu()

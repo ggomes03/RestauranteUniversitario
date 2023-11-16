@@ -20,4 +20,7 @@
   <li class="nav-item nav-item-prad">
     <a class="nav-link active" href="<?= base_url('report') ?>" aria-current="page">Relatório</a>
   </li>
+  <li class="nav-item nav-item-prad">
+    <a class="nav-link active" href="<?= base_url('users') ?>" aria-current="page">Usuários</a>
+  </li>
 </ul>

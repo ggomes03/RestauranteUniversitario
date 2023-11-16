@@ -5,7 +5,11 @@ use App\Models\ReportModel;
 
 class Prad extends BaseController {
     public function index(){
-        return view('application/header').view('adm/prad');
+        if(session()->get('user')->tipoUsuario == 1 ){
+            return redirect('/');
+        } else {
+            return view('application/header').view('adm/prad');
+        }
     }
 
     public function report(){
